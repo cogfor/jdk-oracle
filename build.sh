@@ -1,1 +1,1 @@
-docker build --rm=true -t cogfor/oracle-jdk:7 .
+docker build --rm=true -t cogfor/jdk-oracle:7 .
