@@ -26,8 +26,8 @@ RUN apt-get update
 RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections
 # and install java 8 oracle jdk
 RUN apt-get -y install oracle-java8-installer oracle-java8-set-default 
-#RUN update-alternatives --display java
-#ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+RUN update-alternatives --display java
+ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
