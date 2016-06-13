@@ -1,2 +1,2 @@
 #!/bin/sh
-docker push cogfor/jdk-oracle:7
+docker push cogfor/jdk-oracle:8
